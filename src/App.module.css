@@ -1,0 +1,47 @@
+body {
+  background-color: #081b33;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 100px;
+  opacity: 1;
+  animation: fade 2s linear;
+}
+
+.image {
+  align-items: center;
+  margin: auto;
+  width: 370px;
+  margin-top: 20px;
+}
+
+.bro {
+  width: 50px;
+  margin-top: 50px;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
