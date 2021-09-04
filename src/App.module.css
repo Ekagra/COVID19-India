@@ -1,12 +1,31 @@
 body {
-  background-color: #081b33;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
 }
+
+.box {
+  background-color: #e8e8e8;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
 
 .text {
   font-size: 100px;
@@ -21,10 +40,6 @@ body {
   margin-top: 20px;
 }
 
-.bro {
-  width: 50px;
-  margin-top: 50px;
-}
 
 @keyframes fade {
   0%,

@@ -16,16 +16,18 @@ class App extends React.Component {
 
     return (
       <div className={styles.container}>
+
+<div className={styles.box}>
       
         <img src={image} className={styles.image} alt="COVID-19" />
 
-        <Typography style={{ marginTop: "20px" ,color:"#fafafa" , fontSize:"18px", textAlign:"center"  }}>
+        <Typography style={{ marginTop: "20px" ,color:"#081b33" , fontSize:"18px", textAlign:"center"  }}>
 
         This is a COVID-19 dashboard containing information about COVID and its spread across various states in India
 
         </Typography>
 
-        <Typography style={{ marginTop: "10px" ,color:"#fafafa" , fontSize:"18px", textAlign:"center" }}>
+        <Typography style={{ marginTop: "10px" ,color:"#081b33" , fontSize:"18px", textAlign:"center" }}>
         
         Made by{" "}
         <Link
@@ -37,7 +39,7 @@ class App extends React.Component {
         
         </Typography>
 
-        <Typography style={{ marginTop: "50px" ,color:"#fafafa" , fontSize:"25px", fontWeight:"700", marginLeft:"50px", style:"bold" }} className={styles.text}>
+        <Typography style={{ marginTop: "50px" ,color:"#081b33" , fontSize:"25px", fontWeight:"700", marginLeft:"50px", style:"bold" }} className={styles.text}>
       
       What is COVID?
         
@@ -51,7 +53,7 @@ In rare situations, children can develop a severe inflammatory syndrome a few we
         
         </Typography>
         
-        <Typography style={{ marginTop: "50px" ,color:"#fafafa" , fontSize:"25px", fontWeight:"700", marginLeft:"50px", style:"bold" }} className={styles.text}>
+        <Typography style={{ marginTop: "50px" ,color:"#081b33" , fontSize:"25px", fontWeight:"700", marginLeft:"50px", style:"bold" }} className={styles.text}>
       
       How to safeguard yourself?
         
@@ -80,6 +82,7 @@ GET VACCINATED: Authorized COVID-19 vaccines can help protect you from COVID-19.
 
 </Typography>
 
+</div>
         <Apidata/>
 
    

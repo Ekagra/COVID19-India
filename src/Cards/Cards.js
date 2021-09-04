@@ -4,7 +4,6 @@ import {
   CardContent,
   Typography,
   Grid,
-  CircularProgress,
 } from "@material-ui/core";
 import CountUp from "react-countup";
 import cx from "classnames";
@@ -16,14 +15,14 @@ const Cards = (props) => {
   return (
 
     <div className={styles.container}>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={5} justify="center">
 
         <Grid
             item
             component={Card}
-            xs={12}
+            xs={50}
             md={3}
-            className={cx(styles.card, styles.recovered)}
+            className={cx(styles.card, styles.infected)}
           >
             <CardContent>
               <img src={active} className={styles.smallimage} alt="active" />
@@ -31,7 +30,7 @@ const Cards = (props) => {
                 <CountUp
                   start={0}
                   end={props.conf}
-                  duration={2.5}
+                  duration={3}
                   separator=","
                 />
               </Typography>
@@ -54,7 +53,7 @@ const Cards = (props) => {
                 <CountUp
                   start={0}
                   end={props.rec}
-                  duration={2.5}
+                  duration={3}
                   separator=","
                 />
               </Typography>
@@ -70,7 +69,7 @@ const Cards = (props) => {
             component={Card}
             xs={12}
             md={3}
-            className={cx(styles.card, styles.recovered)}
+            className={cx(styles.card, styles.deaths)}
           >
             <CardContent>
               <img src={death} className={styles.smallimage} alt="dec" />
@@ -78,7 +77,7 @@ const Cards = (props) => {
                 <CountUp
                   start={0}
                   end={props.dec}
-                  duration={2.5}
+                  duration={3}
                   separator=","
                 />
               </Typography>

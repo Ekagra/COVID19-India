@@ -2,9 +2,6 @@ import React, {useState,useEffect} from 'react'
 import Card from "../Cards/Cards"
 import ReactMapGL, {Marker} from "react-map-gl";
 import styles from "./getApiData.css";
-import mapboxgl from "mapbox-gl";
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const Data = () => {
 
@@ -12,9 +9,10 @@ const Data = () => {
     const[viewport,setViewport] = useState({
         longitude: 78.0792,
         latitude: 27.8913,
-        width: "80vw",
-        height: "80vh",
+        width: "92vw",
+        height: "92vh",
         zoom: 5,
+
     })
 
     var conf = 0;
@@ -88,12 +86,15 @@ const Data = () => {
          dec = {dec/2}
         />
 
-             <ReactMapGL  
+        <div className = "themap">
+
+             <ReactMapGL 
                 {...viewport}
                 mapboxApiAccessToken="pk.eyJ1IjoiaWFtZWthZ3JhIiwiYSI6ImNrcXhjczljcDB3d2ozMXFweGhkZXdzOGUifQ.Bg1hRtu-lGoR6O79m8wJow"
                 onViewportChange={viewport => {
                     setViewport(viewport);
-                }} >     
+                }}
+                 >     
 
                {
 
@@ -126,7 +127,7 @@ const Data = () => {
 }
 
         </ReactMapGL> 
-
+</div>
    
 
         </div>
