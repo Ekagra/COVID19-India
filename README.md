@@ -4,14 +4,14 @@ A simple react web app giving information about COVID-19 and it's spread in Indi
 
 ## Demo
 
-https://condescending-nobel-f82959.netlify.app/
+https://pensive-minsky-479f64.netlify.app/
 
 ## Ruining the app
 
 **Clone the repository:**
 
 ```sh
-https://github.com/Ekagra/WebD-Selection.git
+https://github.com/Ekagra/COVID19-India.git
 ```
 
 **Install dependencies and run the app:**
