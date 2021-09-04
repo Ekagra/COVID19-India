@@ -76,7 +76,6 @@ const Data = () => {
                 conf = conf + parseInt(item["1"]["total"]["confirmed"])
                 rec = rec + parseInt(item["1"]["total"]["recovered"])
                 dec = dec + parseInt(item["1"]["total"]["deceased"])
-
             })
 
         }
@@ -84,7 +83,7 @@ const Data = () => {
 
 
          <Card
-         confirmed ={conf}
+         conf ={conf/2}
          rec = {rec/2}
          dec = {dec/2}
         />
@@ -114,7 +113,7 @@ const Data = () => {
 
 <Marker latitude={lngm} longitude={latm}>
        <div className="state"
-       >{item["1"]["delta"]["confirmed"]} today
+       >{item["1"]["total"]["confirmed"]} total
        </div>
      </Marker>
 

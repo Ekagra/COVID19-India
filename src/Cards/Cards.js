@@ -30,13 +30,13 @@ const Cards = (props) => {
               <Typography style={{marginTop:"10px",fontSize:"20px"}}>
                 <CountUp
                   start={0}
-                  end={props.active}
+                  end={props.conf}
                   duration={2.5}
                   separator=","
                 />
               </Typography>
               <Typography style={{fontSize:"25px", fontWeight:"700", paddingRight:"50px"}}>
-               Active Cases
+               Confirmed Cases
               </Typography>
             </CardContent>
           </Grid>
