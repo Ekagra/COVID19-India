@@ -1,7 +1,10 @@
 import React, {useState,useEffect} from 'react'
 import Card from "../Cards/Cards"
+import styles from "./getApiData.css"
 import ReactMapGL, {Marker} from "react-map-gl";
-import styles from "./getApiData.css";
+import mapboxgl from "mapbox-gl";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 const Data = () => {
 
