@@ -1,6 +1,6 @@
 {
+  "homepage": ".",
   "name": "covid19-webd",
-  "homepage": "http://Ekagra.github.io/covid19-webd",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +14,8 @@
     "react-dom": "^17.0.2",
     "react-map-gl": "^6.1.16",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "worker-loader": "^3.0.8"
   },
   "scripts": {
     "predeploy": "npm run build",
