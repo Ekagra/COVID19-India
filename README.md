@@ -17,8 +17,8 @@ https://github.com/Ekagra/COVID19-India.git
 **Install dependencies and run the app:**
 
 ```sh
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 ## Dependencies
