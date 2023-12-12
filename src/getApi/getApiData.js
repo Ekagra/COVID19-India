@@ -56,7 +56,7 @@ const Data = () => {
     const [data, setData] = useState([])
 
     const getData = async () =>{
-       const res = await fetch('https://mysterious-headland-18062.herokuapp.com/https://data.covid19india.org/v4/min/data.min.json')
+       const res = await fetch('https://data.covid19india.org/v4/min/data.min.json')
         const newdata = await res.json()
         console.log(newdata)
         setData(newdata)
