@@ -2,9 +2,20 @@
 
 A simple react web app giving information about COVID-19 and it's spread in India
 
+## Screenshots
+
+<div style="float: left; margin-right: 10px;">
+  <img src="https://i.imgur.com/KKYVMYT.png" width="400" />
+</div>
+<div style="float: left;">
+  <img src="https://i.imgur.com/WjcSuCL.png" width="400" /> 
+</div>
+
+<!--
 ## Demo
 
 https://pensive-minsky-479f64.netlify.app/
+-->
 
 ## Ruining the app
 
